@@ -1,0 +1,67 @@
+{
+    "tokenColors": [
+        {
+            "scope": "meta.embedded.block.hbnf",
+            "settings": {
+                "foreground": "#6bddfa",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "entity.name.tag.hbnf",
+            "settings": {
+                "foreground": "#569CD6",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "constant.language.null.hbnf",
+            "settings": {
+                "foreground": "#CE9178",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": "keyword.operator.definition.hbnf, keyword.operator.quantifier.hbnf, keyword.operator.alternative.hbnf, keyword.operator.concatenation.hbnf, keyword.operator.group.hbnf",
+            "settings": {
+                "foreground": "#f0f07e",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": "string.quoted.double.hbnf, string.quoted.single.hbnf",
+            "settings": {
+                "foreground": "#cc8569",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": "constant.other.range.hbnf",
+            "settings": {
+                "foreground": "#9fe778",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": "comment.block.hbnf",
+            "settings": {
+                "foreground": "#6A9955",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": "keyword.operator.endRule.hbnf",
+            "settings": {
+                "foreground": "#4562b1",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": "keyword.operator.group.hbnf",
+            "settings": {
+                "foreground": "#3ca9b8",
+                "fontStyle": ""
+            }
+        }
+    ]
+}

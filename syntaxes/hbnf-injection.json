@@ -1,0 +1,22 @@
+{
+    "scopeName": "markdown.hbnf.injection",
+    "injectionSelector": "L:text.html.markdown",
+    "patterns": [
+        {
+            "include": "#hbnf-code-block"
+        }
+    ],
+    "repository": {
+        "hbnf-code-block": {
+            "name": "meta.embedded.block.hbnf",
+            "contentName": "source.hbnf",
+            "begin": "(^|\\G)(\\s*)(```|~~~)\\s*(hbnf|ebnf|bnf)\\s*$",
+            "end": "(^|\\G)(\\2)(\\3)\\s*$",
+            "patterns": [
+                {
+                    "include": "source.hbnf"
+                }
+            ]
+        }
+    }
+}

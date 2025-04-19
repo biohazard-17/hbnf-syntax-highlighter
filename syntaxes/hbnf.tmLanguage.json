@@ -1,0 +1,92 @@
+{
+	"scopeName": "source.hbnf",
+	"name": "HBNF",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#non-terminals"
+		},
+		{
+			"include": "#terminals"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#special-constructs"
+		}
+	],
+	"repository": {
+		"comments": {
+			"name": "comment.block.hbnf",
+			"begin": "/\\*",
+			"end": "\\*/",
+			"patterns": [
+				{
+					"match": "\\*/",
+					"name": "invalid.illegal.unclosed-comment.hbnf"
+				}
+			]
+		},
+		"non-terminals": {
+			"name": "entity.name.tag.hbnf",
+			"match": "<[^>]+>"
+		},
+		"terminals": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.hbnf",
+					"begin": "\"",
+					"end": "\""
+				},
+				{
+					"name": "string.quoted.single.hbnf",
+					"begin": "'",
+					"end": "'"
+				},
+				{
+					"name": "constant.other.range.hbnf",
+					"match": "#\\[[^\\]]*\\]"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.definition.hbnf",
+					"match": "::="
+				},
+				{
+					"name": "keyword.operator.endRule.hbnf",
+					"match": ";"
+				},
+				{
+					"name": "keyword.operator.quantifier.hbnf",
+					"match": "\\*|\\+|\\?|\\{\\}|\\[\\]"
+				},
+				{
+					"name": "keyword.operator.alternative.hbnf",
+					"match": "\\|"
+				},
+				{
+					"name": "keyword.operator.concatenation.hbnf",
+					"match": ","
+				},
+				{
+					"name": "keyword.operator.group.hbnf",
+					"match": "\\(|\\)"
+				}
+			]
+		},
+		"special-constructs": {
+			"patterns": [
+				{
+					"name": "constant.language.null.hbnf",
+					"match": "\\b(NULL|E)\\b"
+				}
+			]
+		}
+	}
+}

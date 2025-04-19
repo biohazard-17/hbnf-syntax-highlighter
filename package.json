@@ -1,0 +1,61 @@
+{
+  "name": "hbnf-syntax-highlighter",
+  "displayName": "hbnf syntax highlighter",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "BH-17",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "HBNF Colors",
+        "uiTheme": "vs-dark",
+        "path": "./themes/hbnf-color-theme.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "hbnf",
+        "aliases": [
+          "HBNF",
+          "hbnf"
+        ],
+        "extensions": [
+          ".hbnf",
+          ".ebnf"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "hbnf",
+        "scopeName": "source.hbnf",
+        "path": "./syntaxes/hbnf.tmLanguage.json"
+      },
+      {
+        "scopeName": "markdown.hbnf.injection",
+        "path": "./syntaxes/hbnf-injection.json",
+        "injectTo": [
+          "text.html.markdown",
+          "text.html.markdown.gfm"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.hbnf": "hbnf"
+        }
+      },
+      {
+        "path": "./syntaxes/hbnf.tmLanguage.json",
+        "scopeName": "source.hbnf",
+        "injectedLanguages": [
+          "markdown"
+        ]
+      }
+    ]
+  }
+}
