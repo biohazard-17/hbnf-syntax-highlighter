@@ -1,9 +1,13 @@
 {
   "name": "hbnf-syntax-highlighter",
   "displayName": "hbnf syntax highlighter",
-  "description": "",
+  "description": "Simple syntax highlighter hbnf grammar inside markdown code blocks and also for .hbnf files",
   "version": "0.0.1",
   "publisher": "BH-17",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biohazard-17/hbnf-syntax-highlighter.git"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -26,8 +30,7 @@
           "hbnf"
         ],
         "extensions": [
-          ".hbnf",
-          ".ebnf"
+          ".hbnf"
         ],
         "configuration": "./language-configuration.json"
       }
