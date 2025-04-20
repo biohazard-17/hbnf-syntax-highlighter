@@ -63,6 +63,10 @@
 					"match": ";"
 				},
 				{
+					"name": "keyword.operator.negation.hbnf",
+					"match": "!"
+				},
+				{
 					"name": "keyword.operator.quantifier.hbnf",
 					"match": "\\*|\\+|\\?|\\{\\}|\\[\\]"
 				},

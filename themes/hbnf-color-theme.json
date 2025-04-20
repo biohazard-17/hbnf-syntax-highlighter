@@ -50,6 +50,13 @@
             }
         },
         {
+            "scope": "keyword.operator.negation.hbnf",
+            "settings": {
+                "foreground": "#fc5050",
+                "fontStyle": ""
+            }
+        },
+        {
             "scope": "keyword.operator.endRule.hbnf",
             "settings": {
                 "foreground": "#4562b1",
