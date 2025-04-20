@@ -33,7 +33,7 @@
         "editor.background": "#1f1f1f",
         "editor.findMatchBackground": "#9e6a03",
         "editor.foreground": "#cccccc",
-        "editor.inactiveSelectionBackground": "#3a3d41",
+        "editor.inactiveSelectionBackground": "#3a3d4110",
         "editor.selectionHighlightBackground": "#add6ff26",
         "editorGroup.border": "#ffffff17",
         "editorGroupHeader.tabsBackground": "#181818",

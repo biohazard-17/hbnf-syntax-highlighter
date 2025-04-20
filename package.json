@@ -2,12 +2,17 @@
   "name": "hbnf-syntax-highlighter",
   "displayName": "hbnf syntax highlighter",
   "description": "Simple syntax highlighter hbnf grammar inside markdown code blocks and also for .hbnf files",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "BH-17",
   "repository": {
     "type": "git",
     "url": "https://github.com/biohazard-17/hbnf-syntax-highlighter.git"
   },
+  "main": "./extension.js", 
+  "activationEvents": [
+    "onLanguage:hbnf", 
+    "onCommand:hbnf.format" 
+  ],
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -15,6 +20,30 @@
     "Programming Languages"
   ],
   "contributes": {
+    "configuration": {
+      "hbnf.format": {
+        "type": "object",
+        "properties": {
+          "hbnf.format.verticalAlignment":{
+            "type":"boolean",
+            "default": true,
+            "description": "Vertically align alternatives with indentation"
+          },
+          "indentSize": {
+            "type": "number",
+            "default": 4,
+            "description": "Número de espacios para indentación"
+          }
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "hbnf.format",
+        "title": "Format HBNF Document",
+        "category": "HBNF"
+      }
+    ],
     "themes": [
       {
         "label": "HBNF Colors",

@@ -2,3 +2,4 @@
 *.vscodeignore
 CHANGELOG.md
 bin
+examples/*.hbnf

@@ -8,7 +8,7 @@
 		"diffEditor.unchangedRegionBackground": "#f8f8f8",
 		"editor.background": "#ffffff",
 		"editor.foreground": "#000000",
-		"editor.inactiveSelectionBackground": "#e5ebf1",
+		"editor.inactiveSelectionBackground": "#e5ebf180",
 		"editor.selectionHighlightBackground": "#add6ff80",
 		"editorIndentGuide.activeBackground1": "#939393",
 		"editorIndentGuide.background1": "#d3d3d3",
