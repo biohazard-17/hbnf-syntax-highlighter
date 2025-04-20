@@ -60,7 +60,7 @@
 					"match": "::="
 				},
 				{
-					"name": "constant.language.null.hbnf",
+					"name": "keyword.operator.endRule.hbnf",
 					"match": ";"
 				},
 				{

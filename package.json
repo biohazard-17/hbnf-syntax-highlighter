@@ -20,6 +20,11 @@
         "label": "HBNF Colors",
         "uiTheme": "vs-dark",
         "path": "./themes/hbnf-color-theme.json"
+      },
+      {
+        "label": "HBNF Colors",
+        "uiTheme": "vs",
+        "path": "./themes/hbnf-light-theme.json"
       }
     ],
     "languages": [
