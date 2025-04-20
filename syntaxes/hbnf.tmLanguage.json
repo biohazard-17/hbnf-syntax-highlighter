@@ -48,22 +48,23 @@
 				},
 				{
 					"name": "constant.other.range.hbnf",
-					"match": "#\\[[^\\]]*\\]"
+					"begin": "#\\[",
+					"end" : "\\]"
 				}
 			]
 		},
 		"operators": {
 			"patterns": [
 				{
-					"name": "keyword.operator.definition.hbnf",
+					"name": "token.warn-token.hbnf",
 					"match": "::="
 				},
 				{
-					"name": "keyword.operator.endRule.hbnf",
+					"name": "constant.language.null.hbnf",
 					"match": ";"
 				},
 				{
-					"name": "keyword.operator.negation.hbnf",
+					"name": "invalid.hbnf",
 					"match": "!"
 				},
 				{

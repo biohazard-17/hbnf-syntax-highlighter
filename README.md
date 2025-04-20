@@ -28,7 +28,9 @@ Syntax Highlight in .hbnf files as well inside markdown codeblocks declared as h
 <hbnf> ::= { <element> } ;
 <element> ::= <spacer> | <comment> | <rule>
 <comment> ::= "/*" , { <character> | <spacer> } !"*/" , "*/"
-/*a rule consist of a -left hand side-, followed by the derivation symbol, followed by te -right hand side- then followed by any amount of spacer characters ending with the rule end token; in between, any amount of spacers can be placed*/
+/*a rule consist of a -left hand side-, followed by the derivation symbol, 
+followed by te -right hand side- then followed by any amount of spacer characters ending with the rule end token; 
+in between, any amount of spacers can be placed*/
 <rule> ::= <left-hand-side> , { <spacer> } , <derivation> , { <spacer> } , <right-hand-side> , { <spacer> } , <rule-end> ;
 <left-hand-side> ::= "<" , <identifier> , ">" ;
 <right-hand-side> ::= <concatenation> ;
