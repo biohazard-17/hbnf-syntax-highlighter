@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/biohazard-17/hbnf-syntax-highlighter.git"
   },
-  "main": "./extension.js", 
+  "main": "./src/extension.js", 
   "activationEvents": [
     "onLanguage:hbnf", 
     "onCommand:hbnf.format" 
@@ -32,7 +32,7 @@
           "indentSize": {
             "type": "number",
             "default": 4,
-            "description": "Número de espacios para indentación"
+            "description": "number of spaces for indentation"
           }
         }
       }

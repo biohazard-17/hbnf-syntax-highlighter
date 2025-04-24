@@ -3,3 +3,6 @@
 CHANGELOG.md
 bin
 examples/*.hbnf
+/src/lexer
+/src/utils
+./extension.js
